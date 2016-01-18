@@ -5,6 +5,7 @@ import com.moshx.AssetsConfig
 import com.moshx.AssetsMapper
 import com.moshx.FieldNameGenerator
 import com.moshx.InternalConfig
+import com.moshx.models.MappedAssets
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction
 
@@ -18,7 +19,22 @@ class AssetsMapperTask extends DefaultTask {
 
         AssetsConfig config = project.extensions.getByType(AssetsConfig);
         if (config == null) {
-            config = new AssetsConfig();
+            println("mapAssets task not defined.")
+            return
+        }
+
+
+        List<MappedAssets> mappedAssetsList = config.mappedAssetsList;
+        if(mappedAssetsList.empty){
+            println("mapped assets list is empty.")
+            return
+        }
+
+
+        mappedAssetsList.each {
+
+            it.process(project)
+
         }
 
         println(Arrays.toString(config.getMappedAssetsList().toArray()));
@@ -44,7 +60,6 @@ class AssetsMapperTask extends DefaultTask {
         }
 
         assetsDirs.each { println(it) }
-
 
         File outputDir;
 

@@ -1,5 +1,7 @@
 package com.moshx.models;
 
+import org.gradle.api.Project;
+
 public class MappedAssets {
 
     String path;
@@ -73,5 +75,9 @@ public class MappedAssets {
 
     public void setExcludePattern(String excludePattern) {
         this.excludePattern = excludePattern;
+    }
+
+    public void process(Project project) {
+        new AssetsProcess(this).process(project);
     }
 }

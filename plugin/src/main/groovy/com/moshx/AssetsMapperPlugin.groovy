@@ -7,6 +7,7 @@ class AssetsMapperPlugin implements Plugin<Project> {
 
     @Override
     void apply(Project target) {
+        println("#AssetsMapperPlugin")
         target.extensions.create("mapAssets", AssetsConfig);
         target.tasks.create("mapAssets", AssetsMapperTask);
     }

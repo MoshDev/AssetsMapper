@@ -9,6 +9,8 @@ class AssetsMapperTask extends DefaultTask {
     @TaskAction
     public void apply() {
 
+        println("#AssetsMapperTask")
+
         AssetsConfig config = project.extensions.getByType(AssetsConfig);
         if (config == null) {
             config = new AssetsConfig();

@@ -1,5 +1,10 @@
-package com.moshx
+package com.moshx.task
 
+import com.moshx.Assets
+import com.moshx.AssetsConfig
+import com.moshx.AssetsMapper
+import com.moshx.FieldNameGenerator
+import com.moshx.InternalConfig
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction
 
@@ -15,6 +20,8 @@ class AssetsMapperTask extends DefaultTask {
         if (config == null) {
             config = new AssetsConfig();
         }
+
+        println(Arrays.toString(config.getMappedAssetsList().toArray()));
 
         List<File> assetsDirs = new ArrayList<>();
 
@@ -57,7 +64,7 @@ class AssetsMapperTask extends DefaultTask {
         internalConfig.assetsDirs = assetsDirs;
         internalConfig.outputDir = outputDir;
         internalConfig.nameGenerator = nameGenerator;
-        internalConfig.asInterfaces = config.asInterfaces;
+        internalConfig.asInterfaces = config.asInterface;
 
 
         AssetsMapper assetsMapper = new AssetsMapper(internalConfig);

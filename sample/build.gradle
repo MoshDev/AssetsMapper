@@ -25,9 +25,11 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
 
-mapAssets{
+mapAssets {
 
-    asInterfaces = true
 
+    map("hello0000"){
+        relative = false
+    }
 
 }

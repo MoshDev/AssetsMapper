@@ -1,7 +1,7 @@
 package com.moshx.plugin
 
 import com.moshx.AssetsConfig
-import com.moshx.AssetsMapperTask
+import com.moshx.task.AssetsMapperTask
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 

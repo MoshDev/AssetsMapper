@@ -15,4 +15,6 @@ class AssetsConfig {
         println "path = [$path], name = [$name]"
     }
 
+
+    public void map(String path, Closure closure){}
 }

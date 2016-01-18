@@ -7,7 +7,7 @@ public class MappedAssets {
     boolean asInterface = false;
     String nameRegex = "[^a-zA-Z0-9$_]";
     String packageName = "com.moshx.gdxr";
-    String sourcesetName = "main";
+    String sourceSetName = "main";
     boolean relativePath = true;
     String excludePattern = null;
 
@@ -51,12 +51,12 @@ public class MappedAssets {
         this.packageName = packageName;
     }
 
-    public String getSourcesetName() {
-        return sourcesetName;
+    public String getSourceSetName() {
+        return sourceSetName;
     }
 
-    public void setSourcesetName(String sourcesetName) {
-        this.sourcesetName = sourcesetName;
+    public void setSourceSetName(String sourceSetName) {
+        this.sourceSetName = sourceSetName;
     }
 
     public boolean isRelativePath() {

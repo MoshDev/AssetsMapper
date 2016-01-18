@@ -29,7 +29,9 @@ mapAssets {
 
 
     map("hello0000"){
-        relative = false
+        relativePath = false
     }
+
+
 
 }

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LibGdxR.iml" filepath="$PROJECT_DIR$/LibGdxR.iml" />
-      <module fileurl="file://$PROJECT_DIR$/libgdxr-sample/libgdxr-sample.iml" filepath="$PROJECT_DIR$/libgdxr-sample/libgdxr-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugin.iml" filepath="$PROJECT_DIR$/plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
     </modules>
   </component>
 </project>

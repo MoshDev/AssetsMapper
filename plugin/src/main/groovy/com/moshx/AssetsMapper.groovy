@@ -19,7 +19,6 @@ class AssetsMapper {
 
     public boolean generate() {
 
-
         for (File dir : config.assetsDirs) {
             if (!dir.directory) {
                 continue;

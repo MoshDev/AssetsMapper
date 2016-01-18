@@ -3,7 +3,7 @@ package com.moshx
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
-class LibgdxR implements Plugin<Project> {
+class AssetsMapperPlugin implements Plugin<Project> {
 
     @Override
     void apply(Project target) {

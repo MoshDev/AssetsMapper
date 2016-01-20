@@ -27,6 +27,8 @@ class AssetsMapperTask extends DefaultTask {
 
         mappedAssetsList.each {
 
+            println("Processing: "+ it.path)
+
             it.process(project)
 
         }

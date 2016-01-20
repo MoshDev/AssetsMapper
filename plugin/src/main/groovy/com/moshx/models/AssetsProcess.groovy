@@ -30,6 +30,7 @@ public class AssetsProcess {
         }
 
         if (!assetsDir.exists() || !assetsDir.isDirectory()) {
+            println(assetsDir.path + " Doesn't exists or not a directory!!")
             return;
         }
 
@@ -59,7 +60,9 @@ public class AssetsProcess {
 
         CodeGenerator codeGenerator = new CodeGenerator(className);
 
-        File[] validFiles = dir.listFiles(new FileUtils.PatternFileFilter(mappedAssets.excludePattern));
+        FileFilter filter = new FileUtils.ChainFilter(new FileUtils.PatternFileFilter(mappedAssets.excludePattern), new FileUtils.HiddenFileFilter(mappedAssets.includeHidden));
+
+        File[] validFiles = dir.listFiles(filter);
 
         if (validFiles != null && validFiles.length > 0) {
 

@@ -10,7 +10,8 @@ public class MappedAssets {
     String packageName = "com.moshx.gdxr";
     String sourceSetName = "main";
     boolean relativePath = true;
-    String excludePattern = null;
+    String excludePattern = ".DS_Store";
+    boolean includeHidden = false;
 
     public String getPath() {
         return path;
@@ -66,6 +67,14 @@ public class MappedAssets {
 
     public void setExcludePattern(String excludePattern) {
         this.excludePattern = excludePattern;
+    }
+
+    boolean getIncludeHidden() {
+        return includeHidden
+    }
+
+    void setIncludeHidden(boolean includeHidden) {
+        this.includeHidden = includeHidden
     }
 
     public void process(Project project) {

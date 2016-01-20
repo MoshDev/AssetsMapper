@@ -33,10 +33,16 @@ public class CodeGenerator {
         this.className = className;
     }
 
-    public TypeSpec.Builder generate() {
+    public TypeSpec.Builder generate(boolean asInterface) {
 
-        TypeSpec.Builder builder = TypeSpec.classBuilder(className);
-        builder.addModifiers(Modifier.PUBLIC, Modifier.FINAL);
+        TypeSpec.Builder builder
+        if (asInterface) {
+            builder = TypeSpec.interfaceBuilder(className);
+            builder.addModifiers(Modifier.PUBLIC);
+        } else {
+            builder = TypeSpec.classBuilder(className);
+            builder.addModifiers(Modifier.PUBLIC, Modifier.FINAL);
+        }
 
         for (CodePair pair : fields) {
             FieldSpec fieldSpec = createFieldSpec(pair.key, pair.value);

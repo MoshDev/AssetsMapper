@@ -68,14 +68,14 @@ public class AssetsProcess {
 
             for (File f : validFiles) {
 
-                String name = NameGenerator.createFieldName(f.name);
+                String name = NameGenerator.createFieldName(f.name, mappedAssets.upperCase);
                 String value = f.path.replaceFirst(excludedPath, "");
 
                 codeGenerator.addField(name, value);
             }
         }
 
-        TypeSpec.Builder builder = codeGenerator.generate();
+        TypeSpec.Builder builder = codeGenerator.generate(mappedAssets.asInterface);
 
         File[] subDirs = dir.listFiles(new FileUtils.DirectoryFileFilter());
         if (subDirs && subDirs.length > 0) {

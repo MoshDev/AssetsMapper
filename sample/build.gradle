@@ -27,11 +27,9 @@ dependencies {
 
 mapAssets {
 
-
-    map("hello0000"){
+    map("/src/main/resources/assets")
+    map("/Users/mohammede/Android/Projects/AssetsMapper/AssetsMapper/plugin/src/main/groovy/com/moshx/code"){
         relativePath = false
     }
-
-
 
 }

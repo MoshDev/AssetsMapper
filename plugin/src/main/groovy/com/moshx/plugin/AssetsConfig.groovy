@@ -1,11 +1,11 @@
-package com.moshx
+package com.moshx.plugin
 
 import com.moshx.models.MappedAssets
 import org.gradle.api.internal.ClosureBackedAction
 
 class AssetsConfig {
 
-    private List<MappedAssets> mappedAssetsList = new ArrayList<>();
+    public List<MappedAssets> mappedAssetsList = new ArrayList<>();
 
     List<MappedAssets> getMappedAssetsList() {
         return mappedAssetsList
@@ -24,7 +24,7 @@ class AssetsConfig {
         return assets;
     }
 
-    private MappedAssets createMappedAssets(String path) {
+    private static MappedAssets createMappedAssets(String path) {
         MappedAssets assets = new MappedAssets();
         assets.path = path;
         return assets;

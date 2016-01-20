@@ -7,12 +7,14 @@ import java.io.File;
 public class AssetsProcess {
 
     private final MappedAssets mappedAssets;
+    private final Project project;
 
-    public AssetsProcess(MappedAssets mappedAssets) {
+    public AssetsProcess(MappedAssets mappedAssets, Project project) {
         this.mappedAssets = mappedAssets;
+        this.project = project;
     }
 
-    public void process(Project project) {
+    public void process() {
 
         File assetsDir;
 
@@ -22,9 +24,11 @@ public class AssetsProcess {
             assetsDir = new File(mappedAssets.getPath());
         }
 
-        if (!assetsDir.exists() || assetsDir.isDirectory()) {
+        if (!assetsDir.exists() || !assetsDir.isDirectory()) {
             return;
         }
+
+        File[] validFiles = com.moshx.utils.FileUtils.listFiles(assetsDir, mappedAssets.excludePattern);
 
     }
 

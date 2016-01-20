@@ -78,6 +78,6 @@ public class MappedAssets {
     }
 
     public void process(Project project) {
-        new AssetsProcess(this).process(project);
+        new AssetsProcess(this, project).process();
     }
 }

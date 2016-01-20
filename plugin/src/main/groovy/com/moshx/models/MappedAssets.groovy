@@ -7,10 +7,10 @@ public class MappedAssets {
     String path;
     boolean upperCase = true;
     boolean asInterface = false;
-    String packageName = "com.moshx.gdxr";
+    String packageName = "com.moshx.assetsmapper";
     String sourceSetName = "main";
     boolean relativePath = true;
-    String excludePattern = ".DS_Store";
+    String excludePattern = "(.DS_Store|thumbs.db|[!.?].*)";
     boolean includeHidden = false;
 
     public String getPath() {

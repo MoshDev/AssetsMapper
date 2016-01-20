@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31b42403-0627-4461-8a00-2eeb7c7401d0" name="Default" comment="add chain filters">
+    <list default="true" id="31b42403-0627-4461-8a00-2eeb7c7401d0" name="Default" comment="add upperCase and asInterface settings">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/src/main/java/com/moshx/gdxr/Assets.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/code/CodeGenerator.groovy" afterPath="$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/code/CodeGenerator.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/models/AssetsProcess.groovy" afterPath="$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/models/AssetsProcess.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/models/MappedAssets.groovy" afterPath="$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/models/MappedAssets.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/utils/NameGenerator.groovy" afterPath="$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/utils/NameGenerator.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/build.gradle" afterPath="$PROJECT_DIR$/sample/build.gradle" />
     </list>
@@ -232,44 +232,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sample/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.6976744">
+              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Code.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/moshx/gdxr/Code.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MappedAssets.groovy" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/models/MappedAssets.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1744186">
-              <caret line="8" column="23" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CodeGenerator.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/code/CodeGenerator.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
-              <folding>
-                <element signature="e#24#62#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -1050,14 +1018,16 @@
         <option value="$PROJECT_DIR$/sample/src/main/java/com/moshx/gdxr/_a_s_s_e_t_s_.java" />
         <option value="$PROJECT_DIR$/sample/src/main/java/com/moshx/gdxr/Assets.java" />
         <option value="$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/task/AssetsMapperTask.groovy" />
-        <option value="$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/models/MappedAssets.groovy" />
         <option value="$PROJECT_DIR$/sample/src/main/java/com/moshx/gdxr/Moshx.java" />
-        <option value="$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/utils/FileUtils.groovy" />
-        <option value="$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/utils/NameGenerator.groovy" />
         <option value="$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/models/AssetsProcess.groovy" />
-        <option value="$PROJECT_DIR$/sample/build.gradle" />
         <option value="$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/code/CodeGenerator.groovy" />
         <option value="$PROJECT_DIR$/sample/src/main/java/com/moshx/gdxr/Code.java" />
+        <option value="$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/utils/NameGenerator.groovy" />
+        <option value="$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/utils/FileUtils.groovy" />
+        <option value="$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/models/MappedAssets.groovy" />
+        <option value="$PROJECT_DIR$/sample/src/main/java/com/moshx/assetsmapper/Airhockey.java" />
+        <option value="$PROJECT_DIR$/sample/src/main/java/com/moshx/assetsmapper/Assets.java" />
+        <option value="$PROJECT_DIR$/sample/build.gradle" />
       </list>
     </option>
   </component>
@@ -1181,7 +1151,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gdxr" />
+              <option name="myItemId" value="assetsmapper" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1436,7 +1406,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="editor.config.accepted" value="true" />
-    <property name="last.edited.regexp" value="" />
+    <property name="last.edited.regexp" value="2aaa" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -1821,7 +1791,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453306584908</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add upperCase and asInterface settings">
+      <created>1453308642184</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1453308642184</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1873,7 +1849,8 @@
     <MESSAGE value="working on Files and creating clazzes" />
     <MESSAGE value="add CodeGenerator" />
     <MESSAGE value="add chain filters" />
-    <option name="LAST_COMMIT_MESSAGE" value="add chain filters" />
+    <MESSAGE value="add upperCase and asInterface settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="add upperCase and asInterface settings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1884,7 +1861,7 @@
           <properties class="org.gradle.api.artifacts.dsl.DependencyHandler" method="add" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2191,14 +2168,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/utils/FileUtils.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36773255">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sample/src/main/resources/assets/con_ic_segment_card_train.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -2214,14 +2183,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/moshx/gdxr/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0872093">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/plugin/AssetsConfig.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2232,52 +2193,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/utils/NameGenerator.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1744186">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/code/CodeGenerator.groovy">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
-          <folding>
-            <element signature="e#24#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/moshx/gdxr/Code.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/models/AssetsProcess.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54215115">
-          <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
-          <folding>
-            <element signature="e#26#61#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.3110465">
+          <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/utils/FileUtils.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15261628">
+          <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/models/MappedAssets.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1744186">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.2616279">
+          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/moshx/assetsmapper/Assets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47655067">
+          <caret line="21" column="86" selection-start-line="21" selection-start-column="86" selection-end-line="21" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/src/main/groovy/com/moshx/code/CodeGenerator.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30232558">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+          <folding>
+            <element signature="e#24#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6976744">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
           <folding />
         </state>
       </provider>

@@ -28,16 +28,5 @@ dependencies {
 mapAssets {
 
     //Local project dir
-    map("/src/main/resources/assets")
-
-    //Outer dir
-    map("/Users/mohammede/maps/app"){
-        relativePath = false
-        upperCase = true
-        asInterface = false
-        packageName = "com.moshx.assetsmapper";
-        sourceSetName = "main";
-        includeHidden = false;
-    }
-
+    map("/src/main/resources/assets/images")
 }
